@@ -12,6 +12,14 @@
 4. 版面維持現狀：`260px / 600px / 350px` 三欄；寬度不足時依現有媒體查詢收成兩欄、單欄。手機（約 375px）不可橫向捲動。
 5. 所有文字繁體中文。連結、時間、數字必須對應原始來源，不可編造。
 6. 外部連結一律 `rel="noopener noreferrer"`。
+7. `<head>` 在 `</title>` 之後必須有本站 favicon 這四行（檔案在 repo 根目錄，不是外部資源）。舊的 icon 連結要換掉：
+
+```html
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="site.webmanifest">
+```
 
 ## 1. 設計 token
 
